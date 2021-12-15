@@ -4,6 +4,8 @@
   "description": "basic bot template with command handler",
   "main": "app.js",
   "dependencies": {
+    "@discordjs/builders": "^0.9.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
     "asynckit": "^0.4.0",
     "callsites": "^3.1.0",
     "combined-stream": "^1.0.8",
@@ -16,6 +18,7 @@
     "mime-db": "^1.50.0",
     "mime-types": "^2.1.33",
     "node-fetch": "^2.6.5",
+    "nodemon": "^2.0.15",
     "ow": "^0.27.0",
     "tr46": "^0.0.3",
     "ts-mixer": "^6.0.0",

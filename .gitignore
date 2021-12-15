@@ -2,3 +2,5 @@
 node_modules
 
 secret.json
+config.json
+people.json
