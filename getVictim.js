@@ -1,5 +1,9 @@
-const people = require('people.json');
+let people = require('./people.json');
+people = people.sort().map((el) => `**${el.toUpperCase()}** 😂`);
 
-const getVictim = () => {};
+const getVictim = () => {
+  let randIdx = Math.floor(Math.random() * people.length);
+  return String(people[randIdx]);
+};
 
 module.exports = getVictim;
