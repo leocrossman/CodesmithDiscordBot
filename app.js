@@ -21,14 +21,11 @@ bot.on('ready', async () => {
 });
 
 bot.on('interactionCreate', async (interaction) => {
-  console.log('asdf');
   if (!interaction.isCommand()) return;
 
   const { commandName } = interaction;
 
-  if (commandName === 'ping') {
-    await interaction.reply('Pong!');
-  } else if (commandName === 'victim') {
+  if (commandName === 'victim') {
     await interaction.reply(getVictim());
   }
 });
