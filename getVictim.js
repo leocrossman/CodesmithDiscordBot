@@ -17,6 +17,10 @@ const getVictim = () => {
     name = `${name.slice(0, -1)}<a:togepi:920719422237335612>`;
   } else if (name.includes(`LEO`)) {
     name = `${name.slice(0, -1)}<a:nopers:921060824225824830>`;
+  } else if (name.includes(`ALMA`)) {
+    name = `${name.slice(0, -1)}:angel:`;
+  } else if (name.includes(`AMY`)) {
+    name = `${name.slice(0, -1)}.js😂`;
   }
   return name;
 };

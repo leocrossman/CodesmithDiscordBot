@@ -12,9 +12,10 @@ const bot = new Discord.Client({
 //Playing Message
 bot.on('ready', async () => {
   //Log Bot's username and the amount of servers its in to console
-  console.log(
-    `${bot.user.username} is online on ${bot.guilds.cache.size} servers!`
-  );
+  console.log(`${bot.user.username} is online on ${bot.guilds.cache.size} servers!`);
+
+  // const channel = bot.channels.cache.get('912344104644530199');
+  // channel.send(`HAPPY NEW YEAR EVERYONE😘 CAN'T WAIT TO TARGET YOU ALL IN THE NEW YEAR😈🎯`);
 
   //Set the Presence of the bot user
   bot.user.setActivity('The Victim Game', { type: 'PLAYING' });
